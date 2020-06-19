@@ -1,0 +1,49 @@
+
+
+
+
+
+
+
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+
+public class Main
+{
+  
+
+     public static void main(String []args){
+        System.out.println("students Grades");
+       
+     
+
+     int[]studentsPercentage={70,90,30,90,80,84,69,92,63,45};
+     char[]letterGrades=new char [10];
+
+    for(int i=0; i<10 ; i++){
+        letterGrades[i]=bee(studentsPercentage[i]);
+         System.out.println(letterGrades[i]);
+    }
+    }
+
+        public static char bee (int k){
+            if (k>=90){
+            return 'A' ;
+        } else if (k>=80){
+             return 'B' ;
+        } else if (k>=70){
+            return 'C' ;
+        } else if (k>=60){
+            return 'D' ;
+        } else 
+            return 'F' ;
+        
+
+        
+        }
+}
